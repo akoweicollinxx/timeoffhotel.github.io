@@ -103,7 +103,11 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="timeoff.js"></script>
     <script>
-      AOS.init();
+      AOS.init({
+        easing: 'ease',
+        duration: 1800,
+        once: true
+    });
     </script>
 </body>
 </html>
