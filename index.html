@@ -50,7 +50,7 @@
             <h3>Sapele Delta State</h3>
             <p>We are the king of Hospitality and fitness</p>
         </div>
-        <img src="images/play.PNG" id="btn">
+        <img src="./images/play.PNG" id="btn">
 
     </section>
 
@@ -65,7 +65,7 @@
                 Our rooms are spacious and well furnished. The baths are neatly tiled and there is a comfortable balcony that allows our guest to step out of their rooms to take a breath of fresh air.
             </p>
         </div>
-        <div class="raise-pic" data-aos="fade-in" data-aos-delay="400">
+        <div class="raise-pic" data-aos="fade-right" data-aos-delay="400">
             <img src="images/w2.PNG" alt="">
             <img class="ppp" src="images/w3.PNG" alt="">
         </div>
@@ -168,10 +168,10 @@
 
             if(backVideo.paused){
                 backVideo.play();
-                btn.src = "images/pause.png";
+                btn.src = "./images/pause.png";
             } else{
                 backVideo.pause();
-                btn.src = "images/play.png";
+                btn.src = "./images/play.png";
             }
         }
 
@@ -180,7 +180,11 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="timeoff.js"></script>
     <script>
-      AOS.init();
+       AOS.init({
+        easing: 'ease',
+        duration: 1800,
+        once: true
+    });
     </script>
 </body>
 </html>
