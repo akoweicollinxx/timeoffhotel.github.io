@@ -1,0 +1,16 @@
+@media(min-width: 1000px){
+    body{
+        height: 100vh;
+    }
+    .services{
+        margin-bottom: -500px;
+    }
+    footer{
+        background: #000;
+        padding: 20px 20px 0; 
+        height: 400px;
+        position: relative;
+        /* margin-bottom: 800px; */
+        
+    }
+}
